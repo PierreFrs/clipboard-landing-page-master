@@ -1,0 +1,70 @@
+/* Variables */
+:root {
+    /* Font sizes */
+    --desktop-font-size: 18px;
+    --mobile-font-size: 16px;
+
+    /* Font Weights */
+    --regular: 400;
+    --bold: 600;
+
+    /* Colors */
+    --primary-Strong-Cyan: hsl(171, 66%, 44%);
+    --primary-Light-Blue: hsl(233, 100%, 69%);
+    --neutral-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --neutral-Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* Style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global style */
+html {
+    font-size: var(--main-font-size);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: #F2F2F2;
+}
+
+/* Headings */
+
+
+
+/* Buttons */
+
+
+
+/* Images/logos */
+
+
+
+/* Sections */
+
+
+
+/* Paragraphs */
+
+
+
+/* Header */
+
+
+
+/* Footer */
+
+
+
+
+/* Media Querries */
+/* Desktop */
+
+@media only screen and (min-width: 376px) {
+
+}
