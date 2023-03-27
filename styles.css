@@ -29,37 +29,215 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     background-color: #F2F2F2;
 }
 
 /* Headings */
+.heading {
+    font-weight: var(--bold);
+    color: var(--neutral-Dark-Grayish-Blue);
+}
 
+.main-heading {
+    font-size: 2rem;
+}
 
+.sub-heading {
+    font-size: 1.75rem;
+}
+
+.feature-heading {
+    font-size: 1.5rem;
+}
+
+.header .main-heading {
+    margin-top: 4rem;
+}
+
+/* Paragraphs */
+p {
+    color: var(--neutral-Grayish-Blue);
+    line-height: 1.625rem;
+}
+
+.main-paragraph {
+    margin-top: 1rem;
+}
+
+.paragraphs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3.5rem;
+}
+
+.feature-paragraph {
+    margin-top: 0.625rem;
+}
 
 /* Buttons */
 
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 3rem;
+    width: 100%;
+}
 
+.btn {
+    font-size: var(--desktop-font-size);
+    font-weight: var(--bold);
+    color: white;
+    line-height: 30px;
+    width: 100%;
+    min-width: fit-content;
+    padding: 0 2rem;
+    height: 56px;
+    border-radius: 2rem;
+    border: none;
+    padding: 13px auto;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+} 
+
+.green-btn {
+    background-color: var(--primary-Strong-Cyan);
+    box-shadow: 0 4px 0 hsl(171, 66%, 40%);
+}
+
+.blue-btn {
+    background-color: var(--primary-Light-Blue);
+    box-shadow: 0 4px 0 hsl(233, 100%, 65%);
+}
 
 /* Images/logos */
+.illustration {
+    width: 90%;
+    margin-top: 4rem;
+}
 
+.partner-logo {
+    width: 8.75rem;
+}
 
+.social-logo {
+        cursor: pointer;
+}
+
+.social-logo path:hover {
+    fill: var(--primary-Strong-Cyan);
+}
+
+.workflow-illustration {
+    margin-bottom: 2.5rem;
+}
 
 /* Sections */
+main,
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
 
+    /* Header */
+    header {
+        margin-top: 7.75rem;
+    }
 
+    .header-background {
+        background-image: url("./images/bg-header-mobile.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
 
-/* Paragraphs */
+    /* Snippets section */
+    .snippets {
+        margin-top: 10rem;
+    }
 
+    /* Clipboard section */
+    .clipboard {
+        margin-top: 11.625rem;
+    }
 
+    /* Workflow section */
+    .workflow,
+    .partners {
+        margin-top: 8.125rem;
+    }
 
-/* Header */
+    /* Partners section */
+    .partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 
+    /* Apple section */
+    .apple,
+    footer {
+        margin-top: 10.625rem;
+    }
 
+    /* Footer */
 
-/* Footer */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: hsl(201, 11%, 90%);
+    }
 
+    .footer-logo {
+        width: 55px;
+        margin-top: 3.25rem;
+    }
 
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .nav-link {
+        font-size: var(--desktop-font-size);
+        color: var(--neutral-Dark-Grayish-Blue);
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        color: var(--primary-Strong-Cyan);
+    }
+
+    .socials-container {
+        display: flex;
+        gap: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3.375rem;
+    }
 
 
 /* Media Querries */
@@ -67,4 +245,137 @@ body {
 
 @media only screen and (min-width: 376px) {
 
+    /* Global style */
+    html {
+        font-size: var(--desktop-font-size);
+    }
+
+    /* Headings */
+    .main-heading {
+        font-size: 2.55rem;
+    }
+
+    .sub-heading {
+        font-size: 2rem;
+    }
+
+    .feature-heading {
+        font-size: 1.33rem;
+    }
+
+    .header .main-heading {
+        margin-top: 3.1rem;
+    }
+
+    /* Paragraphs */
+    p {
+        line-height: 1.667rem;
+    }
+
+    .main-paragraph {
+        margin-top: 0.89rem;
+    }
+
+    .paragraphs-container {
+        gap: 3.1rem;
+        min-width: 350px;
+    }
+
+    .feature-paragraph {
+        margin-top: 0.44rem;
+    }
+
+    /* Buttons */
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.89rem;
+        margin-top: 2.67rem;
+        width: 100%;
+    }
+
+    .btn {
+        max-width: 12.6rem;
+    }
+
+    /* Images/logos */
+    .illustration {
+        max-width: 752px;
+        margin-top: 4.44rem;
+    }
+
+    .partner-logo {
+        width: 9.17rem;
+    }
+
+    /* Sections */
+
+    .header,
+    main {
+        max-width: 50%
+    }
+
+        /* Header */
+        header {
+            margin-top: 7.1rem;
+        }
+
+        .header-background {
+            background-image: url("./images/bg-header-desktop.png");
+        }
+
+        /* Snippets, Clipboard, Partners & Apple sections */
+        .snippets,
+        .clipboard,
+        .partners,
+        .apple {
+            margin-top: 8.3rem;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6.1rem;
+            text-align: left;
+            transform: translateX(-25%);
+        }
+
+        /* Workflow section */
+        .workflow {
+            margin-top: 8.89rem;
+        }
+
+        .workflow .paragraphs-container {
+            flex-direction: row;
+        }
+
+        /* Footer */
+        .footer {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 9rem;
+        }
+
+        .footer-logo {
+            margin-right: 7.5rem;
+            margin-top: 0;
+        }
+
+        .footer-nav {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-right: 12rem;
+            margin-top: 0;
+        }
+
+        .socials-container {
+            gap: 1.33rem;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 }
