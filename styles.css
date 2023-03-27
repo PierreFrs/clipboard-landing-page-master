@@ -278,7 +278,11 @@ header {
 
     .paragraphs-container {
         gap: 3.1rem;
-        min-width: 350px;
+        width: 100%;
+    }
+
+    .paragraph-container {
+        width: 350px;
     }
 
     .feature-paragraph {
@@ -311,14 +315,19 @@ header {
 
     /* Sections */
 
-    .header,
     main {
-        max-width: 50%
+        max-width: 85%
     }
 
         /* Header */
         header {
             margin-top: 7.1rem;
+            max-width: 50%;
+        }
+
+        .section-main-paragraph-container {
+            max-width: 60%;
+            margin:auto;
         }
 
         .header-background {
@@ -332,14 +341,14 @@ header {
         .apple {
             margin-top: 8.3rem;
         }
-
+        /* Workflow section => features-container div */
         .features-container {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 6.1rem;
             text-align: left;
-            transform: translateX(-25%);
+            transform: translateX(-15%);
         }
 
         /* Workflow section */
@@ -347,8 +356,17 @@ header {
             margin-top: 8.89rem;
         }
 
-        .workflow .paragraphs-container {
+        .workflow > .paragraphs-container {
+            display: flex;
             flex-direction: row;
+        }
+
+        /* Partners section */
+        .partners {
+            flex-direction: row;
+            justify-content: center;
+            width: 80%;
+            gap: 6rem;
         }
 
         /* Footer */
