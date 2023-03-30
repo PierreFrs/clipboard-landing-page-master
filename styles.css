@@ -26,6 +26,7 @@
 html {
     font-size: var(--main-font-size);
     font-family: 'Bai Jamjuree', sans-serif;
+    width: 100vw;
 }
 
 body {
